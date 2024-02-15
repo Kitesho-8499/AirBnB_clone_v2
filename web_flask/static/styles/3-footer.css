@@ -1,13 +1,11 @@
-
-ter {
-    display: flex;
+footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    background-color: white;
     height: 60px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #FFFFFF;
     border-top: 1px solid #CCCCCC;
-    grid-area: footer;
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
