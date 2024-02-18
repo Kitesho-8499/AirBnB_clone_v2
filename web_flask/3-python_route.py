@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 3. dd third view func that redirects and has default val for variable """
+""" 3. Add third view func that redirects and has default val for variable """
 
 from flask import Flask
 
@@ -31,3 +31,9 @@ def c_text(text):
 @app.route('/python/<text>')
 def python_text(text='is cool'):
     """ replace more text with another variable. """
+    text = text.replace('_', ' ')
+    return 'Python {}'.format(text)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
