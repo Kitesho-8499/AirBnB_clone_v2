@@ -3,10 +3,12 @@ import flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
 def homePage():
         """a function to display hello HBNB at the route '/'"""
         return "Hello HBNB!"
+
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnbPage():
